@@ -13,60 +13,155 @@ body {
     font-size: 1.4rem;
     background-color: #202124;
 }
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #999da2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     display: flex;
     justify-content: right;
+    width: 100%;
+    height: 5rem;
 }
+
 nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-rigth {
+    display: flex;
     align-items: center;
 }
+
 nav a{
     color: white;
 }
-.container_puntos {
-    margin: 1rem;
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
 }
-.button_puntos {
+
+.menu-icon:hover{
+    background-color: #303134;
     border-radius: 50%;
-    height: 2rem;
+}
+
+.img-icon {
     width: 2rem;
-    background-color: #202124;
+    height: 2rem;
+}
+
+.nav-acceder {
+    color: #303134;
+    background-color: #8ab4f8;
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.nav-acceder:hover {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 10rem);
+    min-height: 25rem;
+}
+
+.container_main {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.logo_container {
+    height: calc(100% - 560px);
+}
+
+.main-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.1rem solid #999da2;
+    border-radius: 2rem;
+}
+
+.main-input-container:hover {
+    background-color: #303134;
     border: none;
 }
-.container_puntos :hover {
-    border-radius: 50%;
+.lupa-container {
+    padding-left: 1.2rem;
+}
+.lupa-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.input_navigator {
+    color: white;
+    font-size: 1.6rem;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.microfono-container {
+    padding-right: 1.2rem;
+}
+.microfono-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.container_dualbutton {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.button_primary {
     background-color: #303134;
+    color: white;
     padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
 }
-.nav_img_puntos {
-    height: 2rem;
-}
-.button_acceder {
-    background-color: #8ab4f8;
-}
-main {
-    display: flex;
-}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 2rem;
     background-color: #171717;
-}
-ul {
-    display: flex;
-    list-style: none;
-}
-li {
-    padding: 1.5rem;
-}
-li :hover {
-    text-decoration: underline;
-}
-a {
-    text-decoration: none;
-    color: #999da2;
+    height: 5rem;
+    align-items: center;
 }
